@@ -22,7 +22,7 @@ ConfigUtils.setConfigProp('themePrefix', 'ClevelandMetropark');
  *
  * ConfigUtils.setLocalConfigurationFile('localConfig.json');
  */
-ConfigUtils.setLocalConfigurationFile('MapStore2/web/client/configs/localConfig.json');
+ConfigUtils.setLocalConfigurationFile('../configs/localConfig.json');
 
 /**
  * Use a custom application configuration file with:
