@@ -8,29 +8,7 @@
 import security from '@mapstore/reducers/security';
 
 import pluginsDef from './plugins.js';
-/*
-{
-    name: "home",
-    path: "/",
-    component: require('./pages/Maps').default
-}, {
-    name: "maps",
-    path: "/maps",
-    component: require('./pages/Maps').default
-}, {
-    name: "mapviewer",
-    path: "/viewer/:mapType/:mapId",
-    component: require('./pages/MapViewer').default
-}, {
-    name: "mapviewer",
-    path: "/viewer/:mapType/:mapId/context/:contextId",
-    component: require('./pages/MapViewer').default
-}, {
-    name: "mapviewer",
-    path: "/viewer/:mapId",
-    component: require('./pages/MapViewer').default
-}
-*/
+
 export default {
     pages: [{
         name: "home",
