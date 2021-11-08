@@ -29,7 +29,7 @@ export default {
         path: "/viewer/:mapType/:mapId",
         component: require('@mapstore/product/pages/MapViewer').default,
         pageConfig: {
-            name: 'home'
+            name: 'mapviewer'
         }
     }, {
         name: "mapviewer",
