@@ -58,7 +58,7 @@ export default {
     }, {
         name: "context-manager",
         path: "/context-manager",
-        component: require('@mapstore/product/pages/pages/ContextManager').default
+        component: require('@mapstore/product/pages/ContextManager').default
     }, {
         name: "dashboard",
         path: "/dashboard",
