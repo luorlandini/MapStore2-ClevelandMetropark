@@ -100,8 +100,8 @@
 			</bean>
 		</constructor-arg>
 	</bean>
-    <!-- enable direct connection mode
-    <bean id="ldapUserDAO" class="it.geosolutions.geostore.core.dao.ldap.impl.UserDAOImpl">
+
+	<bean id="ldapUserDAO" class="it.geosolutions.geostore.core.dao.ldap.impl.UserDAOImpl">
         <constructor-arg ref="contextSource"/>
         <property name="searchBase" value="${ldap.userBase}"/>
         <property name="memberPattern" value="${ldap.memberPattern}"/>
@@ -123,5 +123,5 @@
     <alias name="ldapUserGroupDAO" alias="userGroupDAO"/>
     <alias name="externalSecurityDAO" alias="SecurityDAO"/>
     <alias name="ldapUserDAO" alias="userDAO"/>
-    -->
+
 </beans>
