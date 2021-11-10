@@ -5,7 +5,7 @@ const extractThemesPlugin = require('./MapStore2/build/themes.js').extractThemes
 const ModuleFederationPlugin = require('./MapStore2/build/moduleFederation').plugin;
 const port = "8080";
 const host = "localhost";
-const proto= "http";
+const protocol = "http";
 
 module.exports = require('./MapStore2/build/buildConfig')(
     {
@@ -34,35 +34,35 @@ module.exports = require('./MapStore2/build/buildConfig')(
     },
     {
         '/rest/geostore': {
-            target: `${proto}://${host}:${port}/mapstore`,
+            target: `${protocol}://${host}:${port}/mapstore`,
             secure: false,
             headers: {
                 host: `${host}`
             }
         },
         '/pdf': {
-            target: `${proto}://${host}:${port}/mapstore`,
+            target: `${protocol}://${host}:${port}/mapstore`,
             secure: false,
             headers: {
                 host: `${host}`
             }
         },
         '/mapstore/pdf': {
-            target: `${proto}://${host}:${port}/mapstore`,
+            target: `${protocol}://${host}:${port}/mapstore`,
             secure: false,
             headers: {
                 host: `${host}`
             }
         },
         '/proxy': {
-            target: `${proto}://${host}:${port}/mapstore`,
+            target: `${protocol}://${host}:${port}/mapstore`,
             secure: false,
             headers: {
                 host: `${host}`
             }
         },
         '/geoserver': {
-            target: `${proto}://${host}:${port}/`,
+            target: `${protocol}://${host}:${port}/`,
             secure: false,
             headers: {
                 host: `${host}`
